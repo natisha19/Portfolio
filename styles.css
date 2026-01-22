@@ -60,10 +60,20 @@ sizing and spacing as well.
 
 
 body {
-	font-family:Georgia;
-	color:#333;
-	background:#333;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0f172a;
+  color: #0f172a;
 }
+
+.primary {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.secondary {
+  background: #f8fafc;
+}
+
 
 /************* typography ************/
 
@@ -104,6 +114,23 @@ a { color: #4574b5; }
 
 .centered { text-align:center; }
 
+h1, h2, h3 {
+  color: #0f172a;
+}
+
+header h1 {
+  color: #f8fafc;
+}
+
+a {
+  color: #2563eb;
+}
+
+p {
+  color: #475569;
+}
+
+
 /****************** Grid ******************/
 
 .primary { background:#b5b5b5; }
@@ -142,13 +169,24 @@ header .wrapper {
 	justify-content: center;
 }
 
-#mainnav ul li a {
+/* #mainnav ul li a {
 	display:block;
 	color: #4574b5;
 	border-left: 2px solid #4574b5;
 	padding:0 20px;
 	font-size:20px;
+} */
+
+#mainnav ul li a {
+  color: #f8fafc;
+  border-left: none;
+  font-weight: 500;
 }
+
+#mainnav ul li a:hover {
+  color: #93c5fd;
+}
+
 
 /********************* NOTES ************************
 Removes the border on the first link...
@@ -255,6 +293,15 @@ footer {
 	#about-contact article:last-of-type {
 		flex-basis: 100%;
 	}
+
+	#work, #about-contact article {
+		background: white;
+		border-radius: 12px;
+		padding: 24px;
+		box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+		margin-bottom: 24px;
+		}
+
 	
 }
 
