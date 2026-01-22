@@ -1,210 +1,129 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>S Natisha | Portfolio</title>
 
-	<!--/ /---- Put your name in the title of the page ----/ /-->
-	<title>S Natisha | Portfolio</title>
+  <!-- Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website" />
 
-	
-	<!--/ /-------- Normalize CSS --------/ /-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	
-	<!--/ /-------- Google Fonts --------/ /-->
-	<!-- Add a link to google fonts here if you want them -->
-	
-	<!--/ /-------- Font Awesome --------/ /-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-	<!--/ /-------- Your Styles --------/ /-->
-	<link href="styles.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
-	<meta description="A short description for your site...">
-
-	<!--/ /-------- Needed For Mobile Devices --------/ /-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-	
-    <!-- ------------------------------------------------------
-    The site is designed to be mobile first. The wrapper elements
-	are in place for when you get to desktop size to contain the 
-	content.
-    ------------------------------------------------------- -->
-    
-	<header class="primary">
-        <div class="wrapper">
-            
-			<div class="logo-container">
-				<h1>S Natisha<br>Portfolio</h1>
 
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>S Natisha</h1>
+      <p class="subtitle">Computer Science (AIML) Student</p>
 
-				<!-- ------------------------------------------------------
-				Note that the image of the logo is linked to the home page.
-				------------------------------------------------------- -->
-				<a href="index.html"><img src="https://dummyimage.com/175/c4c4c4/fff&text=logo" alt="logo image" id="logo"></a>
-			</div>
-            
-            
-			<!-- ------------------------------------------------------
-            The navigation here is linking to the sections further down
-            the page.
-            ------------------------------------------------------- -->
-			<nav id="mainnav">
-            	<ul>
-                	<li><a href="#work">Work</a></li>
-                    <li><a href="#about-contact">About</a></li>
-                    <li><a href="#about-contact">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-        
-    </header>
-    
-    <!-- ------------------------------------------------------
-    This is the work section, which has two parts: the featured
-	section and the projects section.
-    ------------------------------------------------------- -->
-    
-    <section id="work">
-   		<div class="wrapper">
-        	<h2>Selected Projects</h2>
-				<section class="featured">
-				<article>
-					<h3>QuickDraw GAN-Augmented Doodle Classifier</h3>
-					<p>
-					Deep-learning based doodle recognition system using CNNs trained on Google’s
-					Quick, Draw! dataset, enhanced with GAN-generated synthetic sketches to
-					improve class balance. Deployed using FastAPI with real-time canvas input.
-					</p>
-					<p><strong>Tech:</strong> Python, CNN, GAN, FastAPI</p>
-				</article>
-				</section>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-            
-            
-            <!-- ------------------------------------------------------
-            The projects section is for additional projects. I put four in
-			here, but it could be more, or less. You just have to pay
-			attention to how they wrap, and how many you want per row.
-            
-            Note that each image should be linked to the page with more
-            detailed information about that project. You can use a copy of
-            page.html to create those pages.
-            ------------------------------------------------------- -->
-            
-            <section class="projects">
-				<article>
-					<h3>Sanjeevan – Blood & Organ Donation Platform</h3>
-					<p>
-					Full-stack platform managing hospitals, donors, and recipients with
-					compatibility matching and role-based access.
-					</p>
-					<p><strong>Tech:</strong> Python, Streamlit, MySQL</p>
-				</article>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
 
-				<article>
-					<h3>Fusetrack – Object Tracking & Trajectory Prediction</h3>
-					<p>
-					Lightweight perception pipeline using LiDAR-camera fusion with YOLO,
-					Kalman Filters, and LSTM-based prediction.
-					</p>
-					<p><strong>Tech:</strong> Python, YOLO, LSTM</p>
-				</article>
+      <div class="card">
+        <h3>QuickDraw GAN-Augmented Doodle Classifier</h3>
+        <p>
+          A deep-learning based doodle recognition system using CNNs trained on
+          Google’s Quick, Draw! dataset, enhanced with GAN-generated synthetic
+          sketches for improved generalization.
+        </p>
+        <p class="tech">Python · CNN · GAN · FastAPI</p>
+      </div>
 
-				<article>
-					<h3>FreshTrack (CIE Ignite)</h3>
-					<p>
-					App concept to reduce food waste using grocery tracking, expiry reminders,
-					and AI-driven meal planning. Won All-Girls Team Award.
-					</p>
-				</article>
-			</section>
-<!-- end row -->
-            
-        </div> <!-- end work wrapper -->
-    </section>
-    
-    
-    <!-- ------------------------------------------------------
-    This is the about and contact section. The links in the main
-    navigation link to this section. 
-    ------------------------------------------------------- -->
-    
-    <section id="about-contact" class="secondary">
-   		<div class="wrapper">
-        	
-			<div class="profile-photo">
-            	<img src="http://placehold.it/260?text=Your+Photo" alt="image">
-            </div>
-			
-            <article>
-				<h2>About Me</h2>
-				<p>
-				I am a B.Tech CSE (AIML) student at PES University with strong interests in
-				machine learning, full-stack development, and intelligent systems.
-				I enjoy building end-to-end projects that combine data, algorithms, and
-				clean user interfaces.
-				</p>
+      <div class="card">
+        <h3>Sanjeevan – Blood & Organ Donation Platform</h3>
+        <p>
+          Full-stack web application for managing donors, hospitals, and recipients
+          with compatibility matching and role-based access.
+        </p>
+        <p class="tech">Python · Streamlit · MySQL</p>
+      </div>
 
-				<h3>Skills</h3>
-				<p>
-				Python, C, JavaScript, HTML, CSS, React, MERN Stack, MySQL, GitHub
-				</p>
+      <div class="card">
+        <h3>Fusetrack – Object Tracking & Trajectory Prediction</h3>
+        <p>
+          Lightweight perception pipeline using LiDAR-camera fusion with YOLO-based
+          detection, Kalman filter tracking, and LSTM-based prediction.
+        </p>
+        <p class="tech">Python · YOLO · LSTM</p>
+      </div>
 
-			</article> 
-                
-			<article>
-				<h2>Contact</h2>
-				<p>
-				<i class="fa fa-envelope"></i>
-				<a href="mailto:natishasuresh5767@gmail.com">natishasuresh5767@gmail.com</a>
-				</p>
+      <div class="card">
+        <h3>FreshTrack (CIE Ignite)</h3>
+        <p>
+          App concept to reduce food waste through grocery tracking, expiry
+          reminders, and AI-driven meal planning. Award-winning solution.
+        </p>
+        <p class="tech">Product Ideation · UX · AI Concepts</p>
+      </div>
 
-				<p>
-				<i class="fa fa-phone"></i> +91 7899782299
-				</p>
+    </div>
+  </section>
 
-				<p class="social">
-				<a href="https://www.linkedin.com/in/natisha-s-a35009332" target="_blank">
-					<i class="fab fa-linkedin"></i>
-				</a>
-				<a href="https://github.com/natisha19" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-				</p>
+  <!-- ABOUT -->
+  <section id="about" class="section light">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science (AIML) student with interests in machine learning,
+        full-stack development, and intelligent systems. I enjoy building practical,
+        end-to-end solutions and learning through hands-on projects.
+      </p>
 
+      <p class="tech">
+        Python · C · JavaScript · HTML · CSS · React · MySQL · Git
+      </p>
+    </div>
+  </section>
 
-				<!-- ------------------------------------------------------
-				You can see here that I have included font-awesome. It is used
-				to create the icons above and below. You can go to the font-awesome
-				website to see the available icons and swap some out.
-				------------------------------------------------------- -->
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
 
-				<p class="social">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a> 
-					<a href="#"><i class="fab fa-twitter-square"></i></a>
-				</p>
-			</article>
-                   
-        </div>
-    </section>
-    
-    
-    <!-- ------------------------------------------------------
-    The footer section is not doing much on this page. Add more
-    content if necessary.
-    ------------------------------------------------------- -->
-    <footer class="primary">
-    	<div class="wrapper">
-        	<p class="centered">&copy; 2019 all rights reserved</p>
-        </div>
-    </footer>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:natishasuresh5767@gmail.com">
+          natishasuresh5767@gmail.com
+        </a>
+      </p>
+
+      <div class="social">
+        <a href="https://github.com/natisha19" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/natisha-s-a35009332" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 S Natisha</p>
+  </footer>
 
 </body>
 </html>
