@@ -1,8 +1,32 @@
-# portfolio-template
-A basic html/css template for web concentration portfolio 1 students
+# Portfolio Website
 
-Download this template and use it to build a simple portfolio website. There are lots of comments in the code to explain what is doing what, plus I have made a google presentation that will walk you through some of the things you need to do. Those slides can be found here:
+This repository contains the source code for my personal portfolio website.
 
-https://docs.google.com/presentation/d/1ybdws_K_1xUW_wzs9dlSobAagYgSCbpZaJKJ1cLyp6k/edit?usp=sharing
+The website is built using **HTML and CSS** and showcases my projects, skills, and contact information in a clean and professional layout.
 
-Using this template requires a basic understanding of HTML and CSS
+---
+
+## 🛠️ Tech Stack
+
+- HTML5  
+- CSS3  
+
+---
+
+## 📁 Project Structure
+
+- `index.html` – Main portfolio page  
+- `styles.css` – Styling and layout  
+- `assets/` – Images and other static resources (if added)
+
+---
+
+## 🚀 Deployment
+
+This portfolio is currently deployed on vercel and can be deployed using **GitHub Pages** or any static hosting platform.
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me via LinkedIn or GitHub.
